@@ -34,10 +34,6 @@ Snowball and avalanche repayment strategies, amortisation schedules, Prisma migr
 - **[NationalSecurityAgency/ghidra #9984](https://github.com/NationalSecurityAgency/ghidra/pull/9984)** — *open, in review.*
   The NE loader treated `EntryTableBundle.CONSTANT` (16-bit constants) as segment offsets, producing bogus symbols
   and entry points. They are now recorded separately and exposed as typed enums under `/NE/defines`.
-- **[nodejs/undici #6068](https://github.com/nodejs/undici/pull/6068)** — *open, in review.*
-  `fetch` could not follow redirects with a `MockAgent`. The abort guard in the redirect path was unreachable
-  because the mock controller never exposed `aborted`, so the follow-up request was terminated. Fixed the
-  controller and added a regression test.
 
 ---
 
